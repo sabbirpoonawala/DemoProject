@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$(this).bind("mouseover",function(event){
+		$("font").attr("color","red");
+	});
+	$(this).bind("mouseout",function(event){
+		$("font").attr("color","green");
+	});
+});
+
+</script>
+</head>
+<body>
+<font color="blue">Syntel Limited</font>
+</body>
+</html>

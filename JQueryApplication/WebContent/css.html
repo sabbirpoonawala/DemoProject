@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+p{
+background-color: blue;
+}
+#p2{
+background-color: gray;
+}
+.pClass{
+background-color: maroon;
+}
+.pClass1{
+background-color: orange;
+}
+
+</style>
+<script src="jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	
+	
+	
+	$("#p2").click(function(){
+		$(this).css("background-color","red");
+	});
+	
+	$(".pClass").click(function(){
+		$(this).css("background-color","violet");
+	});
+	
+	$("#p4").click(function(){
+		
+		$(this).addClass("pClass1");
+	});
+});
+
+</script>
+
+</head>
+<body>
+<p>This is paragraph 1</p><br></br>
+<p id="p2">This is paragraph 2</p><br></br>
+<p class="pClass">This is paragraph 3</p><br></br>
+<p id="p4">This is paragraph 4</p>
+
+</body>
+</html>

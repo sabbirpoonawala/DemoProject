@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$("#b1").click(function(){
+		
+		$("p").hide();
+		
+	});
+      $("#b2").click(function(){
+		
+		$("p").show();
+		
+	});
+	
+});
+
+</script>
+</head>
+<body>
+<p>Can show or hide paragraph</p>
+<form>
+<input id="b1" type="button" value="Hide">
+<input id="b2" type="button" value="Show">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+.listClass{
+background-color: green;
+}
+.firstlist{
+background-color: olive;
+
+}
+
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$("ul").click(function(){
+		
+		$("li").eq(2).addClass("listClass");
+		$("li").filter(".firstlist").css("background-color","red");
+	});
+	
+});
+
+</script>
+</head>
+<body>
+<ul>
+<li class="firstlist">Java</li>
+<li>C</li>
+<li>C++</li>
+<li>JQuery</li>
+<li>Angular</li>
+</ul>
+</body>
+</html>

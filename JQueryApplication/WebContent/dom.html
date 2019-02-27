@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function change(){
+	
+	var text=document.getElementById("t1").value;
+	console.log("value of text box:"+text);
+	document.getElementById("p1").innerHTML=text;
+	document.getElementById("b1").value="Clicked";
+	console.log("Label of button:"+document.getElementById("b1").value);
+	
+}
+
+</script>
+</head>
+<body>
+<p id="p1">Content of the paragraph will change</p>
+<form>
+Name:<input id="t1" type="text"/>
+<input id="b1" type="button" value="Click" onclick="change()"/>
+</form>
+</body>
+</html>

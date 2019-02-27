@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+#div1{
+width: 200px;
+height: 200px;
+background-color: red
+}
+
+#div2{
+width: 200px;
+height: 200px;
+background-color: blue
+}
+
+#div3{
+width: 200px;
+height: 200px;
+background-color: green
+}
+
+
+</style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$("#div1").fadeOut(5000);
+	$("#div2").fadeOut(4000);
+	$("#div3").fadeOut(1000);
+	
+	$("#div1").fadeIn(1000);
+	$("#div2").fadeIn(2000);
+	$("#div3").fadeIn(3000);
+	
+});
+
+
+</script>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+</body>
+</html>
